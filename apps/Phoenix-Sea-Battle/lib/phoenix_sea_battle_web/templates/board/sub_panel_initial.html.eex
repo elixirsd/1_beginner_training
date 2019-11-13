@@ -1,0 +1,17 @@
+<div class="panel-sub">
+  <div>
+    <button phx-click="drop_last">Drop last</button>
+  </div>
+  <div>
+    <button phx-click="drop_all">Drop all</button>
+  </div>
+  <%= if Board.prepare(@board) == :ok do %>
+    <div>
+      <button phx-click="ready">Ready</button>
+    </div>
+  <% else %>
+    <div style="padding-top: 0.4em">
+      left to place: <%= left_to_place(@board) %> ships
+    </div>
+  <% end %>
+</div>

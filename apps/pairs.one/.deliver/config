@@ -1,0 +1,55 @@
+# .deliver/config
+
+APP="pairs_one"
+
+# SKIP_MIX_CLEAN="true"
+# SKIP_GIT_CLEAN="true"
+
+BUILD_HOST="pairs.one"
+BUILD_USER="mxgrn"
+BUILD_AT="/home/mxgrn/builds/pairs_one"
+
+PRODUCTION_HOSTS="pairs.one" # deploy / production hosts separated by space
+PRODUCTION_USER="mxgrn" # local user at deploy hosts
+DELIVER_TO="/home/mxgrn/production" # deploy directory on production hosts
+
+STAGING_HOSTS="stage.pairs.one" # deploy / production hosts separated by space
+STAGING_USER="mxgrn" # local user at deploy hosts
+TEST_AT="/home/mxgrn/production"
+
+# For *Phoenix* projects, symlink prod.secret.exs to our tmp source
+pre_erlang_get_and_update_deps() {
+  local _prod_secret_path="/home/mxgrn/config/pairs_one/prod.secret.exs"
+  if [ "$TARGET_MIX_ENV" = "prod" ]; then
+    __sync_remote "
+      ln -sfn '$_prod_secret_path' '$BUILD_AT/config/prod.secret.exs'
+    "
+  fi
+}
+
+pre_erlang_clean_compile() {
+  status "Preparing assets with: brunch build and phoenix.digest"
+  __sync_remote "
+    # runs the commands on the build host
+    [ -f ~/.profile ] && source ~/.profile # load profile (optional)
+
+    # fail if any command fails
+    set -e
+
+    # enter the build directory on the build host (required)
+    cd '$BUILD_AT'
+
+    mkdir -p priv/static # required by the phoenix.digest task
+
+    cd assets
+    npm install
+
+    # building brunch
+    brunch build --production
+
+    cd ..
+
+    # MIX_ENV=prod mix phoenix.digest
+    APP='$APP' MIX_ENV='$TARGET_MIX_ENV' $MIX_CMD phoenix.digest $SILENCE
+  "
+}
