@@ -59,25 +59,44 @@ If can't figure out, pair w/ someone who has it installed.
 
 # High Level Plan
 
-~1st hr:
+_~1st hr:_
 Intros
 FP vs OOP
 Quick Syntax Overview
 Cards App Exercises
 
-~2nd hr:
-Exercism.io in pairs
-
-~3rd hr:
+_~2nd hr:_
 Look at some other apps
 Try to get running
 Will be good exposure to Phoenix and Live View
 Look under /apps directory
 
-- Image App
-- Sea Battle
-  Try to get running
-  Ask questions
+Apps to Play with:
+Phoenix Live View Examples:
+
+- Phoenix-Sea-Battle
+  Battleship Clone
+- hippo_game_live
+  Timed game where eat fruit
+- pairs.one
+  Card Matching Game
+
+Elixir Programs
+
+- cards
+  Simple Card deck app
+- identicon
+  Github Icon Image Generator
+
+Try to get running
+Ask questions
+
+_~3rd hr:_
+Exercism.io in pairs
+Go through these 2 exercises:
+
+- Hello World
+- Bob
 
 Will see how much time we have and can adjust.
 
