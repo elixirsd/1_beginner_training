@@ -1,24 +1,16 @@
 # Identicon
 
-**TODO: Add description**
+App from Stephen Grider Course
 
-## Installation
+```
+mix deps.get
+iex -S mix
+```
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+In the IEx Session
+`Identicon.main(<your_name>)`
 
-  1. Add `identicon` to your list of dependencies in `mix.exs`:
+Above should generate a file "<your_name>.png"
 
-    ```elixir
-    def deps do
-      [{:identicon, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `identicon` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:identicon]]
-    end
-    ```
-
+In Terminal:
+`open <your_name>.png`
