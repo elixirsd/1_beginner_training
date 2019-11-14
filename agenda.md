@@ -1,5 +1,14 @@
 # Intro
 
+Clone repo w/ this training here
+https://github.com/elixirsd/1_beginner_training
+
+Join Meetup:
+https://www.meetup.com/Elixir-SD/
+
+Join Elixir Slack:
+https://join.slack.com/t/elixirsd/shared_invite/enQtNzQ1Njc1NzA4NjExLWFiNzgxYzE5YzY3NjE0MWU3ZTUzMmU3OWMyOGJiNjFiZDUxYTJjMDNlMzI0ZGEzZjY4OWQ1MTI4NTY2M2Y0YTU
+
 ---
 
 # Introductions
@@ -9,16 +18,23 @@ Asking Questions
 
 - Name, Where from?
 - How long Coding?
-- Why learning Coding?
 - Why interested in Elixir?
-- Ask One Question about Elixir
+
+---
+
+# Future Talks / Trainings
+
+Anyone w/ Elixir experience or interest want to help w/ Future sessions?
+Talks, Training ... Please let me know.
+
+Goal is to get momentum w/ Elixir meetup in SD.
 
 ---
 
 # Find a Pair
 
-Probably best to work in Pairs so can ask questions
-Solo is OK too if preferred
+Please find another person to pair with.
+Better to discuss as go.
 
 If don't have Elixir installed, may want to pair w/ someone who does.
 
@@ -37,6 +53,8 @@ Run: brew install elixir
 Windows: Run the Installer
 Linux: Many varieties.
 
+If can't figure out, pair w/ someone who has it installed.
+
 ---
 
 # High Level Plan
@@ -44,13 +62,17 @@ Linux: Many varieties.
 ~1st hr:
 Intros
 FP vs OOP
+Quick Syntax Overview
 Cards App Exercises
 
 ~2nd hr:
 Exercism.io in pairs
 
 ~3rd hr:
-Look at 2 other apps
+Look at some other apps
+Try to get running
+Will be good exposure to Phoenix and Live View
+Look under /apps directory
 
 - Image App
 - Sea Battle
@@ -114,7 +136,7 @@ Python
 
 ---
 
-# Approach to Training
+# Approach to Training/Exercises
 
 Work through some real code examples first
 Learn to Run the code, Debug, try playing around
