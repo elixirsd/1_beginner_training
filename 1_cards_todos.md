@@ -14,7 +14,9 @@ Upon completing each exercise, paste your code/answers below the question.
 
 ## IEX Shell Exercises
 
-1. Figure out how to run the Cards Elixir program in interactive shell
+1. Figure out how to run the Cards Elixir program in interactive shell. The program `cards` is located under `/apps` in this repo
+   `cd apps/cards`
+   Todo: Figure out how to run it so you can Interact w/ the Program while it's running
 2. Create a deck using the Cards module and assign to variable `deck`
 3. Shuffle `deck` and assign to new variable called `shuffled_deck`
 4. Check if the `shuffled_deck` contains "Ace of Spades" or "Queen of Hearts" or "Foo Bar"
