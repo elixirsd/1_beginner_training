@@ -138,29 +138,26 @@ Python
 
 # Approach to Training/Exercises
 
-Work through some real code examples first
-Learn to Run the code, Debug, try playing around
+Goal of traning is to show everyone how to get going w/ Elixir.
 
-IMO, This is a faster and more natural way to learn. For example, learning Music, one hears the song first then over time learns to play. Learning language, hear some of it spoken and then learn.
+We'll get some Apps running and then look at how some code is working.
 
-Then we'll learn some Syntax AFTER reading the code. Time for a lot of questions about syntax later.
+A lot of links to additional learning exercises will be provided.
 
-Various Projects We'll Play with depending on time.
-Then talk and ask questions to see what we can learn
-
-If want to go through some Tutorials, Books, Resources to build up the examples from Scratch
-
-All will be provided
+We will not cover OTP, processes, or concurrency in this session.
+Goal for first session is exposure to Elixir syntax, to run some apps, and to see how to get going w/ Elixir and some Phoenix.
 
 ---
 
-Sample Apps we'll Play With
-Stephen Grider Udemy Course Examples
+# Syntax Overview
 
-- Cards
-- Github Image Generator
-- Exercism.io Example(s)
-- Harder App
+First off, the Elixir Docs are amazing and easy to read.
+https://elixir-lang.org/docs.html
+
+Also, Elixir School is great:
+https://elixirschool.com/en/
+
+https://github.com/dwyl/learn-elixir
 
 ---
 
@@ -168,9 +165,6 @@ Stephen Grider Udemy Course Examples
 
 cd cards
 iex -S mix
-
-### useful iex commands
-
 recompile
 ctl c (exit shell)
 
@@ -207,6 +201,49 @@ https://www.udemy.com/course/the-complete-elixir-and-phoenix-bootcamp-and-tutori
 
 https://elixirforum.com/t/the-complete-elixir-and-phoenix-bootcamp-udemy-self-published/2271/32
 
-### Compiling (Elixir -> AST -> BEAM)
+### Good Tutorial Sites
+
+Elixir TV
+Deeper Syntax, Language Fundamentals
+https://www.learnelixir.tv/
+
+ElixirCasts
+https://elixircasts.io/
+
+PragPub - Great Teachers
+API design
+https://pragmaticstudio.com/courses/unpacked-full-stack-graphql-with-absinthe-phoenix-react
+
+Alchemix Camp
+https://alchemist.camp/
+
+### Great Videos / Books
+
+GOTO 2019 • The Soul of Erlang and Elixir • Saša Jurić
+https://www.youtube.com/watch?v=JvBT4XBdoUE
+
+Elixir In Action Saša Jurić
+Great explanation of concurrency, BEAM and Erlang/Elixir
+https://www.amazon.com/Elixir-Action-Sa%C5%A1a-Juri-cacute/dp/1617295027/
+
+Chris McCord - Keynote: Phoenix LiveView - Interactive Apps without Javascript - ElixirConf EU 2019
+https://www.youtube.com/watch?v=8xJzHq8ru0M&t=965s
+
+Erlang the Movie
+Funny but cool old movie about Erlang
+https://www.youtube.com/watch?v=BXmOlCy0oBM
+
+Functional Web Development with Elixir, OTP, and Phoenix: Rethink the Modern Web App 1st Edition
+https://www.amazon.com/Functional-Web-Development-Elixir-Phoenix/dp/1680502433/
+
+### Podcasts
+
+http://elixirtalk.com/
+
+### More Advanced
+
+Compiling (Elixir -> AST -> BEAM)
+
+Deeper Knowledge on Erlang / Beam
 
 https://medium.com/@fxn/how-does-elixir-compile-execute-code-c1b36c9ec8cf
