@@ -197,6 +197,9 @@ https://elixirforum.com/t/mix-format-on-save-vscode/20006
 
 https://www.udemy.com/course/the-complete-elixir-and-phoenix-bootcamp-and-tutorial/learn/lecture/5427960#overview
 
+Code for Course:
+https://github.com/StephenGrider/ElixirCode
+
 ### Feedback/Criticism of the Udemy Course
 
 https://elixirforum.com/t/the-complete-elixir-and-phoenix-bootcamp-udemy-self-published/2271/32
